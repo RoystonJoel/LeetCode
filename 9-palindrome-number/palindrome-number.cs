@@ -5,8 +5,6 @@ public class Solution {
         if(x < 0){return false;}
         while(true)
         {
-            Console.WriteLine("x: "+x);
-
             int t = x % 10;
             reverserd = (reverserd * 10) + t;
             x = x / 10;
@@ -15,7 +13,6 @@ public class Solution {
                 break;
             }
         }
-        Console.WriteLine("r: "+reverserd);
         return (reverserd==orgnl) ? true : false;
     }
 }
